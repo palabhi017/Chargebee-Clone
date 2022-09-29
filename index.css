@@ -23,13 +23,14 @@
    
    
    #loginopt{
-    width: 32%;
+    width: 35%;
     height: 100%;
     /* border: 1px solid saddlebrown; */
     display: flex;
-    /* justify-content: space-evenly; */
+    justify-content: end;
     align-items: center;
     gap: 5px;
+    
     background-color: #f3ecfa;
    }
    #lang>p{
@@ -50,15 +51,36 @@
       padding: 9px 15px;
       color: black;
    }
-   .navlinks .dropmenu{
-      width: 100px;
+   .megabox{
+      width: 100%;
       margin-top: 20px;
       position: absolute;
-      border: 1px solid saddlebrown;
+      /* border: 1px solid saddlebrown; */
       opacity: 0;
       visibility: hidden;
+      padding: 10px 30px 50px;
+      left: 0;
+      background-color: #f3ecfa;
+      display: flex;
    }
-   .navlinks li:hover .dropmenu{
+   #umegabox>div{
+      width: 20%;
+   }
+   .megabox>div{
+      width: 14%;
+      height: auto;
+      /* border: 1px solid saddlebrown; */
+      display: flex;
+      flex-direction: column;
+   }
+   .megabox>div>a{
+      color: #000ff0;
+      line-height: 12px;
+   }
+   .megabox>div>a:first-child{
+      color: black;
+   }
+   .navlinks li:hover .megabox{
       opacity: 1;
       visibility: visible;
    }
@@ -97,6 +119,7 @@
     background-color:#ff7846 ;
     font-weight: bold;
     border: none;
+    margin-right: 5%;
    }
    #upperpart{
     height: auto;
@@ -139,7 +162,7 @@
     display: flex;
     height: auto;
     width: 100%;
-
+    margin-top: 30px;
 }
 #designpart{
    width: 30%;
@@ -177,6 +200,10 @@
    width: 100%;
    
  }
+ #cards>div>img:hover{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   width: 102%;
+ }
  #midline{
     height: auto;
     width: 50%;
@@ -199,11 +226,21 @@
     grid-template-rows: repeat(1,auto);
     margin: auto;
     margin-top: 35px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
  }
  #stickymidnav>div{
     /* border: 1px solid saddlebrown; */
     border-bottom: 1px solid #64648c;
-    
+    cursor: pointer;
+ }
+ #stickymidnav>div:hover{
+   border-bottom: 2px solid blue;
+ }
+ #stickymidnav>div>p:hover{
+   color: #000ff0;
  }
  #stickymidnav>div>p{
     text-align: center;
@@ -245,6 +282,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    margin-top: 30px;
  }
  #footer>div{
     display: flex;
@@ -267,3 +305,220 @@
  #dropl>a:hover #dropdown{
     visibility: visible;
  } */
+ #trustedpart{
+   height: auto;
+   width: 60%;
+   /* border: 1px solid saddlebrown; */
+   margin: auto;
+   margin-top: 30px;
+   padding: 20px 60px 20px 0px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border-radius: 10px;
+ }
+ #trustedpart>div:last-child{
+   display:flex;
+   width: 80%;
+   gap: 40px;
+   justify-content: end;
+   /* border: 1px solid saddlebrown; */
+ }
+ #trustedpart>div:last-child>div{
+   width: 35%;
+ }
+ #trustedpart>h1{
+   font-size: 40px;
+   /* text-align: center; */
+   margin-left: 25%;
+   color: #181064;
+ }
+ #trustedpart>div>div>p,#trustedpart>div>div>h1{
+   color: #181064;
+ }
+ #customizedcard{
+   height: auto;
+   width: 100%;
+   border: 1px solid saddlebrown;
+   display: flex;
+   margin-top: 80px;
+   
+ }
+ #customizedcard>div{
+   height: 80%;
+   width: 50%;
+   top: 20%;
+   background-color: #6c1c88;
+ }
+ #customizedcard>div:first-child{
+   padding: 30px 0px 80px 40px;
+   height: inherit;
+ }
+ #customizedcard>div>h1{
+   color: white;
+   font-size: 38px;
+ }
+ #customizedcard>div>input{
+   padding: 20px 50px;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   border: none;
+   background-color: #1d0968;
+   font-size: 20px;
+   
+
+ }
+ #customizedcard>div>button{
+   padding: 14px 45px;
+  border: 7px solid #1d0968;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+background-color: #7f47ff;
+color: white;
+font-size: 17px;
+font-weight: bold;
+ }
+ #msgcard{
+   width: 40%;
+   height: 150%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   margin: auto;
+   background-color: white;
+   border-radius: 15px;
+   padding: 30px;
+ }
+ #msgcard>img{
+   width: 40%;
+   border-radius: 60px;
+   padding: 20px 20px;
+ }
+ #msgcard>p{
+   font-size: 18px;
+   
+ }
+ #sponser{
+   display: flex;
+   gap: 20px;
+   padding: 20px;
+   justify-content: center;
+ }
+ #sponser>img{
+  width: 14%;
+ }
+ @media all and (min-width:400px) and (max-width:600px) {
+   #upperpart{
+     grid-template-columns: repeat(1,100%);
+      grid-template-rows: repeat(2,auto);
+      /* border: 1px solid saddlebrown; */
+
+     }
+     #upperpart>div:first-child{
+      padding: 10px;
+      order: 2;
+     }
+     #upperpart>div:last-child>img{
+      width: 100%;
+     }
+     #middlepart{
+      flex-direction: column;
+  }
+  #designpart{
+   width: 100%;
+   height: auto;
+   
+}
+#designpart>img{
+   display: none;
+}
+#cards{
+   
+   grid-template-columns: repeat(1,auto);
+   grid-template-rows: repeat(4,auto);
+  
+   width: 70%;
+}
+#cards>div{
+  
+   padding-left: 20px;
+}
+#midline{
+   height: auto;
+   width: 100%;
+   
+}
+#midline>h1{
+   /* text-align: center; */
+   font-size: 25px;
+}
+#midline>p{
+   /* text-align: center; */
+   font-size: 15px;
+   color: #64648c;
+   line-height: 20px;
+}
+#stickymidnav{
+   display: none;
+}
+.bignavcard{
+   
+   width: 100%;
+   flex-direction: column;
+   margin: auto;
+   padding-top: 30px;
+   /* margin-top: 60px; */
+}
+.bignavcard img{
+width: 100%;
+
+ }
+ #trustedpart>div:last-child{
+   flex-wrap: wrap;
+ }
+ #customizedcard{
+  
+   width: 100%;
+   flex-direction: column;
+   
+   
+   
+ }
+ #customizedcard>div{
+   height: auto;
+   width: 100%;
+   top: 20%;
+   background-color: #6c1c88;
+ }
+ #customizedcard>div:first-child{
+   padding: 10px;
+   order: 2;
+ }
+ #customizedcard>div>h1{
+   
+   font-size: 25px;
+ }
+ #customizedcard>div>input{
+   padding: 15px 30px;
+ }
+ #customizedcard>div>button{
+   padding: 14px 45px;
+  border: 7px solid #1d0968;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+background-color: #7f47ff;
+color: white;
+font-size: 17px;
+font-weight: bold;
+ }
+ #msgcard{
+   width: 90%;
+   padding: 5px;
+   height: auto;
+   margin-top: 3px;
+ }
+ #footer{
+   flex-direction: column;
+   padding-left: 10px;
+
+ }
+ #navbar{
+   display: none;
+ }
+}
