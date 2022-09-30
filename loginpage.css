@@ -1,0 +1,70 @@
+body{
+    background-color: #eaeaf4;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#logo {
+    width: 20%;
+}
+
+#logo>img {
+    width: 35%;
+    margin-left: 15%;
+
+}
+
+#signup {
+    display: flex;
+    width: 20%;
+    gap: 10px;
+    align-items: center;
+}
+#loginpart{
+    height: auto;
+    width: 55%;
+    border: 1px solid saddlebrown;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: white;
+}
+#offer{
+    height: 100%;
+    width: 40%;
+    /* border: 1px solid saddlebrown; */
+
+}
+#offer>p{
+    font-size: 10px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    color: #8c8c90;
+}
+#offer>h2{
+    font-size: 17px;
+}
+#offer>div{
+    display: flex;
+    gap: 20px;
+}
+#offer>div>img{
+    height: 100%;
+}
+#offer>div>p{
+  font-size: 13px;
+  line-height: 18px;
+  color: #8c8c90;
+}
+#form{
+    height: 100%;
+    width: 40%;
+    border: 1px solid saddlebrown;
+
+}
