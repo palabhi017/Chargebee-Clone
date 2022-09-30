@@ -403,7 +403,7 @@ font-weight: bold;
  #sponser>img{
   width: 14%;
  }
- @media all and (min-width:400px) and (max-width:600px) {
+ @media all and (min-width:360px) and (max-width:600px) {
    #upperpart{
      grid-template-columns: repeat(1,100%);
       grid-template-rows: repeat(2,auto);
@@ -518,7 +518,16 @@ font-weight: bold;
    padding-left: 10px;
 
  }
- #navbar{
+ .navlinks{
    display: none;
  }
+ #loginopt{
+   display: none;
+ }
+ #logo>img{
+   width: 100%;
 }
+#logo{
+   width: 40%;
+}
+ }
