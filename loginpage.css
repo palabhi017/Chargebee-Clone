@@ -1,3 +1,7 @@
+/* *{
+    font-family: 'IBM Plex Sans', sans-serif;
+
+} */
 body{
     background-color: #eaeaf4;
 }
@@ -12,7 +16,7 @@ body{
     width: 20%;
 }
 
-#logo>img {
+#logo>a>img {
     width: 35%;
     margin-left: 15%;
 

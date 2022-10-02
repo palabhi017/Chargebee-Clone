@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+    padding: 0px;
+    box-sizing: border-box;
+}
+#main{
+    height: auto;
+    width: 100%;
+    border: 1px solid saddlebrown;
+    display: flex;
+}
+#main>div:first-child{
+    width: 30%;
+    /* border: 1px solid saddlebrown; */
+    
+
+}
+#main>div:last-child{
+    width: 70%;
+    height: inherit;
+    /* border: 1px solid saddlebrown; */
+   padding: 1% 10%;   
+}
+#img>img{
+    width: 100%;
+}
+#form>div{
+    display: flex;
+    justify-content: space-between;
+}
+#form>div>a>img{
+    width: 17%;
+}
+#form>div>a{
+    text-decoration: none;
+}
+#form>div>a>p{
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+#signupform{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border: 1px solid #727272;
+    margin-top: 30px;
+    padding: 0px 40px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+#signupform>div>p:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+#email{
+    margin-top: 30px;
+    color: #727272;
+    font-weight: bold;
+}
+#iemail{
+    margin: -10px;
+    padding: 12px 30px 12px 12px;
+    width: 100%;
+    border: 1px solid #727272;
+    font-size: 15px;
+}
+#num{
+    color: #727272;
+    margin-top: 30px ;
+    font-weight: bold;
+
+}
+#monum{
+    margin: -10px;
+    padding: 12px 30px 12px 12px;
+    width: 100%;
+    border: 1px solid #727272;
+    font-size: 15px;
+
+}
+#abc{
+    margin-top: 30px;
+    color: #4300a3;
+    padding: 3px;
+}
+#abcd{
+    color: #727272;
+}
+#btn{
+    padding: 10px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #c3c3c3;
+    font-weight: bolder;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.ab{
+    color: #727272;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+span{
+    color: #727272;
+    margin-top: 20px;
+    font-size: 15px;
+}
+#sel{
+    background-color: aliceblue;
+    border: none;
+}
+
+#sponser{
+   width: 70%;
+   margin-top: 40px;
+   margin-left: 15%;
+  }
